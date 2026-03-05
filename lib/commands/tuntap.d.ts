@@ -16,7 +16,7 @@ import { TunTapTunnelShowOptions } from './tuntap/show.interfaces';
  *
  * Import module
  * ```
- * import { tuntap } from 'iproute';
+ * import { tuntap } from 'iproutejs';
  * ```
  *
  * Create a new tuntap device
@@ -40,7 +40,7 @@ export declare function add(options: TunTapTunnelAddOptions, globalOptions?: Glo
  *
  * Import module
  * ```
- * import { tuntap } from 'iproute';
+ * import { tuntap } from 'iproutejs';
  * ```
  *
  * Delete a tunnel
@@ -64,7 +64,7 @@ export declare function del(options: TunTapTunnelAddOptions, globalOptions?: Glo
  *
  * Import module
  * ```
- * import { tuntap } from 'iproute';
+ * import { tuntap } from 'iproutejs';
  * ```
  *
  * Show tuntap devices

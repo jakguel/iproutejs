@@ -21,7 +21,7 @@ import { RouteAddOptions } from './route/add.interfaces';
  *
  * Import module
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  * ```
  *
  * Show routes from all tables
@@ -48,7 +48,7 @@ export declare function show(options?: RouteShowOptions, globalOptions?: GlobalO
  *
  * Import module
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  * ```
  *
  * Flush the table cache
@@ -103,7 +103,7 @@ export declare function get(options: RouteGetOptions, globalOptions?: GlobalOpti
  *
  * Import module
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  * ```
  *
  * Unicast type route (the default if not specified)
@@ -158,7 +158,7 @@ export declare function add(options: RouteAddOptions, globalOptions?: GlobalOpti
  *
  * Import module
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  * ```
  *
  * Delete multipath route with load balance between devices
@@ -211,7 +211,7 @@ export declare function append(options: RouteAddOptions, globalOptions?: GlobalO
  *
  * Import module
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  * ```
  *
  * Unicast type route (the default if not specified)

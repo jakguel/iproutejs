@@ -1,38 +1,38 @@
-# node-iproute
+# iproutejs
 
 Show and manipulate network devices, addresses, routing, policy routing, tunnels, IP forwarding, address labels and other `iproute` objects.
 
 Wrapper around native **iproute** suite to allow its functionality to be used in Node.js space.
 
 [![donate](https://shields.io/badge/ko--fi-donate-ff5f5f?logo=ko-fi&style=for-the-badgeKo-fi)](https://ko-fi.com/diosney)
-[![docs](https://github.com/diosney/node-iproute/actions/workflows/docs.yml/badge.svg?branch=master)](https://github.com/diosney/node-iproute/actions/workflows/docs.yml)
-[![tests](https://github.com/diosney/node-iproute/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/diosney/node-iproute/actions/workflows/tests.yml)
+[![docs](https://github.com/jakguel/iproutejs/actions/workflows/docs.yml/badge.svg?branch=master)](https://github.com/jakguel/iproutejs/actions/workflows/docs.yml)
+[![tests](https://github.com/jakguel/iproutejs/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/jakguel/iproutejs/actions/workflows/tests.yml)
 [![npm](https://img.shields.io/npm/v/iproute)](https://www.npmjs.com/package/iproute)
 
 ## Installation
 
-	$ npm install iproute --save
+	$ npm install iproutejs --save
 
 ## Supported Functionality
 
 | Command                                                              | Description                                             | Operations                                                                             |
 |----------------------------------------------------------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [batch](https://diosney.github.io/node-iproute/modules/batch.html)   | Batch mode.                                      | `fromFile`, `fromStdin`                                                                |
-| [link](https://diosney.github.io/node-iproute/modules/link.html)     | Network devices configuration.                          | `add`, `del`, `show`, `set`, `change`                                                  |
-| [address](https://diosney.github.io/node-iproute/modules/address.html) | Protocol address management.                            | `add`, `change`, `replace`, `del`, `flush`, `save`, `restore`, `showdump`, `show`      |
-| [route](https://diosney.github.io/node-iproute/modules/route.html)   | Routing table management.                               | `show`, `flush`, `save`, `restore`, `get`, `add`, `del`, `change`, `append`, `replace` |
-| [rule](https://diosney.github.io/node-iproute/modules/rule.html)     | Routing policy database (RPDB) management.              | `add`, `del`, `save`, `restore`, `flush`, `show`, `list`                               |
-| [monitor](https://diosney.github.io/node-iproute/modules/monitor.html) | State monitoring.                                       | `on`, `close`                                                                          |
-| [addrlabel](https://diosney.github.io/node-iproute/modules/addrlabel.html) | Protocol address label management.                      | `add`, `del`, `list`, `flush`                                                          |
-| [neighbour](https://diosney.github.io/node-iproute/modules/neighbour.html) | Neighbour/ARP tables management.                        | `add`, `del`, `change`, `replace`, `flush`, `show`, `get`                               |
-| [ntable](https://diosney.github.io/node-iproute/modules/ntable.html) | Neighbour table configuration.                          | `change`, `show`                                                                       |
-| [tunnel](https://diosney.github.io/node-iproute/modules/tunnel.html) | Tunnel configuration.                                   | `add`, `change`, `del`, `show`, `prl`, `6rd`                                           |
-| [tuntap](https://diosney.github.io/node-iproute/modules/tuntap.html) | TunTap tunnel configuration.                            | `add`, `del`, `show`, `list`, `lst`                                                    |
-| [maddress](https://diosney.github.io/node-iproute/modules/maddress.html) | Multicast addresses management.                         | `add`, `del`, `show`                                                                   |
-| [mroute](https://diosney.github.io/node-iproute/modules/mroute.html) | Multicast routing cache management.                     | `show`                                                                                 |
-| [utils](https://diosney.github.io/node-iproute/modules/utils.html)   | Custom utility library that complements `iproute` suite. | -                                                                                      |
-| [utils.ipForwarding](https://diosney.github.io/node-iproute/modules/utils.ipForwarding.html) | Manipulates IP forwarding.                              | `enable`, `disable`, `status`, `v{4\|6}.enable`, `v{4\|6}.disable`, `v{4\|6}.status`   |
-| [utils.routingTables](https://diosney.github.io/node-iproute/modules/utils.routingTables.html) | Manipulates routing tables.                             | `show`, `add`, `del`, `clear`                                                          |
+| [batch](https://jakguel.github.io/iproutejs/modules/batch.html)   | Batch mode.                                      | `fromFile`, `fromStdin`                                                                |
+| [link](https://jakguel.github.io/iproutejs/modules/link.html)     | Network devices configuration.                          | `add`, `del`, `show`, `set`, `change`                                                  |
+| [address](https://jakguel.github.io/iproutejs/modules/address.html) | Protocol address management.                            | `add`, `change`, `replace`, `del`, `flush`, `save`, `restore`, `showdump`, `show`      |
+| [route](https://jakguel.github.io/iproutejs/modules/route.html)   | Routing table management.                               | `show`, `flush`, `save`, `restore`, `get`, `add`, `del`, `change`, `append`, `replace` |
+| [rule](https://jakguel.github.io/iproutejs/modules/rule.html)     | Routing policy database (RPDB) management.              | `add`, `del`, `save`, `restore`, `flush`, `show`, `list`                               |
+| [monitor](https://jakguel.github.io/iproutejs/modules/monitor.html) | State monitoring.                                       | `on`, `close`                                                                          |
+| [addrlabel](https://jakguel.github.io/iproutejs/modules/addrlabel.html) | Protocol address label management.                      | `add`, `del`, `list`, `flush`                                                          |
+| [neighbour](https://jakguel.github.io/iproutejs/modules/neighbour.html) | Neighbour/ARP tables management.                        | `add`, `del`, `change`, `replace`, `flush`, `show`, `get`                               |
+| [ntable](https://jakguel.github.io/iproutejs/modules/ntable.html) | Neighbour table configuration.                          | `change`, `show`                                                                       |
+| [tunnel](https://jakguel.github.io/iproutejs/modules/tunnel.html) | Tunnel configuration.                                   | `add`, `change`, `del`, `show`, `prl`, `6rd`                                           |
+| [tuntap](https://jakguel.github.io/iproutejs/modules/tuntap.html) | TunTap tunnel configuration.                            | `add`, `del`, `show`, `list`, `lst`                                                    |
+| [maddress](https://jakguel.github.io/iproutejs/modules/maddress.html) | Multicast addresses management.                         | `add`, `del`, `show`                                                                   |
+| [mroute](https://jakguel.github.io/iproutejs/modules/mroute.html) | Multicast routing cache management.                     | `show`                                                                                 |
+| [utils](https://jakguel.github.io/iproutejs/modules/utils.html)   | Custom utility library that complements `iproute` suite. | -                                                                                      |
+| [utils.ipForwarding](https://jakguel.github.io/iproutejs/modules/utils.ipForwarding.html) | Manipulates IP forwarding.                              | `enable`, `disable`, `status`, `v{4\|6}.enable`, `v{4\|6}.disable`, `v{4\|6}.status`   |
+| [utils.routingTables](https://jakguel.github.io/iproutejs/modules/utils.routingTables.html) | Manipulates routing tables.                             | `show`, `add`, `del`, `clear`                                                          |
 
 ## Docs
 
@@ -40,10 +40,10 @@ The documentation is divided across several files:
 
 | Link                                                                           | Description                                                                              |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [Public API site](https://diosney.github.io/node-iproute)                      | Provides a comprehensive index of the library interfaces, constants, enums, and classes. |
-| [README.md](https://github.com/diosney/node-iproute/blob/master/README.md)     | This document.                                                                                  |
-| [EXAMPLES.md](https://github.com/diosney/node-iproute/blob/master/EXAMPLES.md) | Code samples showcasing how to use the library.                                          |
-| [TODO.md](https://github.com/diosney/node-iproute/blob/master/TODO.md)         | A checklist of several items to add or improve upon.                                     |
+| [Public API site](https://jakguel.github.io/iproutejs)                      | Provides a comprehensive index of the library interfaces, constants, enums, and classes. |
+| [README.md](https://github.com/jakguel/iproutejs/blob/master/README.md)     | This document.                                                                                  |
+| [EXAMPLES.md](https://github.com/jakguel/iproutejs/blob/master/EXAMPLES.md) | Code samples showcasing how to use the library.                                          |
+| [TODO.md](https://github.com/jakguel/iproutejs/blob/master/TODO.md)         | A checklist of several items to add or improve upon.                                     |
 
 ## Motivation
 
@@ -114,28 +114,28 @@ As a general guideline, the module identifiers and options match those provided 
 the module with a basic understanding of **iproute**.
 
 For autocompletion, you can rely on the type definitions supplied within the library or refer to the interface documentation
-at the [API documentation](https://diosney.github.io/node-iproute/modules.html).
+at the [API documentation](https://jakguel.github.io/iproutejs/modules.html).
 
 ### How to Import
 
 If you are using Javascript, you can import using the regular CommonJS `require` as follows:
 
-    const { link } = require('iproute').default;
-    const { link } = require('iproute');
-    const iproute  = require('iproute');
+    const { link } = require('iproutejs').default;
+    const { link } = require('iproutejs');
+    const iproute  = require('iproutejs');
 
 If you are using Typescript, you can use the aforementioned `require` calls, or just Ecmascript modules import:
 
-    import { link } from 'iproute';
-    import iproute, { link } from 'iproute';
-    import * as iproute from 'iproute';
+    import { link } from 'iproutejs';
+    import iproute, { link } from 'iproutejs';
+    import * as iproute from 'iproutejs';
 
 ### How to Use
 
 All methods return Promises, so you can use them directly with `.then().catch()` or you can use `async/await`.
 Both of these calls are valid:
 
-    const { utils } = require('iproute');
+    const { utils } = require('iproutejs');
     
     // Using Promises.
     utils
@@ -161,32 +161,32 @@ Both of these calls are valid:
 
   You can do it by using the following code:
 
-      import { route } from 'iproute';
+      import { route } from 'iproutejs';
 
       await route.flush({
         table: RouteRoutingTables.Cache   // 'cache'
       });
 
 - Need help to complete the interfaces:
-  - [RuleInfo](https://diosney.github.io/node-iproute/interfaces/RuleInfo.html)
-  - [RouteInfo](https://diosney.github.io/node-iproute/interfaces/RouteInfo.html)
-  - [LinkInfo](https://diosney.github.io/node-iproute/interfaces/LinkInfo.html)
-  - [LinkWithAddressInfo](https://diosney.github.io/node-iproute/interfaces/LinkWithAddressInfo.html)
-  - [NeighbourInfo](https://diosney.github.io/node-iproute/interfaces/NeighbourInfo.html)
-  - [NtableInfo](https://diosney.github.io/node-iproute/interfaces/NtableInfo.html)
-  - [TunnelInfo](https://diosney.github.io/node-iproute/interfaces/TunnelInfo.html)
-  - [TunTapTunnelInfo](https://diosney.github.io/node-iproute/interfaces/TunTapTunnelInfo.html)
-  - [MaddressInfo](https://diosney.github.io/node-iproute/interfaces/MaddressInfo.html)
-  - [MrouteInfo](https://diosney.github.io/node-iproute/interfaces/MrouteInfo.html)
+  - [RuleInfo](https://jakguel.github.io/iproutejs/interfaces/RuleInfo.html)
+  - [RouteInfo](https://jakguel.github.io/iproutejs/interfaces/RouteInfo.html)
+  - [LinkInfo](https://jakguel.github.io/iproutejs/interfaces/LinkInfo.html)
+  - [LinkWithAddressInfo](https://jakguel.github.io/iproutejs/interfaces/LinkWithAddressInfo.html)
+  - [NeighbourInfo](https://jakguel.github.io/iproutejs/interfaces/NeighbourInfo.html)
+  - [NtableInfo](https://jakguel.github.io/iproutejs/interfaces/NtableInfo.html)
+  - [TunnelInfo](https://jakguel.github.io/iproutejs/interfaces/TunnelInfo.html)
+  - [TunTapTunnelInfo](https://jakguel.github.io/iproutejs/interfaces/TunTapTunnelInfo.html)
+  - [MaddressInfo](https://jakguel.github.io/iproutejs/interfaces/MaddressInfo.html)
+  - [MrouteInfo](https://jakguel.github.io/iproutejs/interfaces/MrouteInfo.html)
  
 A **PR** is more than welcome.
 
 ## Issues
 
-The source code can be accessed on [GitHub](https://github.com/diosney/node-iproute).
+The source code can be accessed on [GitHub](https://github.com/jakguel/iproutejs).
 <br>
 If you encounter any bugs or need a new feature, please report them on the
-[issue tracker](https://github.com/diosney/node-iproute/issues).
+[issue tracker](https://github.com/jakguel/iproutejs/issues).
 
 ## Contributing
 
@@ -195,8 +195,8 @@ If you want to contribute just follow the project organization and code style an
 If you want to be an official maintainer or contributor just say so, this library is bigger that it seems and there are a
 lot of features to add or to improve.
 
-For potential features to contribute to, please refer to the [TODO.md](https://github.com/diosney/node-iproute/blob/master/TODO.md) in the project root directory.
-This can be specially helpful if you're unsure of what to contribute or if the [issues](https://github.com/diosney/node-iproute/issues) board is empty.
+For potential features to contribute to, please refer to the [TODO.md](https://github.com/jakguel/iproutejs/blob/master/TODO.md) in the project root directory.
+This can be specially helpful if you're unsure of what to contribute or if the [issues](https://github.com/jakguel/iproutejs/issues) board is empty.
 
 ## Tests
 

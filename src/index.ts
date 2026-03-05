@@ -117,7 +117,7 @@ export { ParametersError } from './common/errors/parameters';
  *
  * @example
  * ```
- * import { batch } from 'iproute';
+ * import { batch } from 'iproutejs';
  * ```
  */
 export { batchModule as batch };
@@ -130,7 +130,7 @@ export { batchModule as batch };
  *
  * @example
  * ```
- * import { link } from 'iproute';
+ * import { link } from 'iproutejs';
  * ```
  */
 export { linkModule as link };
@@ -211,7 +211,7 @@ export { LinkSetXdpPinnedOptions } from './commands/link/xdp-options/pinned.inte
  *
  * @example
  * ```
- * import { address } from 'iproute';
+ * import { address } from 'iproutejs';
  * ```
  */
 export { addressModule as address };
@@ -236,7 +236,7 @@ export {
  *
  * @example
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  * ```
  */
 export { routeModule as route };
@@ -274,7 +274,7 @@ export {
  *
  * @example
  * ```
- * import { rule } from 'iproute';
+ * import { rule } from 'iproutejs';
  * ```
  */
 export { ruleModule as rule };
@@ -290,7 +290,7 @@ export { RuleShowOptions, RuleInfo } from './commands/rule/show.interfaces';
  *
  * @example
  * ```
- * import { monitor } from 'iproute';
+ * import { monitor } from 'iproutejs';
  * ```
  */
 export { monitorModule as monitor };
@@ -309,7 +309,7 @@ export { MonitorOptions } from './commands/monitor/monitor.interfaces';
  *
  * @example
  * ```
- * import { addrlabel } from 'iproute';
+ * import { addrlabel } from 'iproutejs';
  * ```
  */
 export { addrlabelModule as addrlabel };
@@ -332,7 +332,7 @@ export { AddrlabelInfo } from './commands/addrlabel/list.interfaces';
  *
  * @example
  * ```
- * import { neighbour } from 'iproute';
+ * import { neighbour } from 'iproutejs';
  * ```
  */
 export { neighbourModule as neighbour };
@@ -353,7 +353,7 @@ export { NeighbourGetOptions } from './commands/neighbour/get.interfaces';
  *
  * @example
  * ```
- * import { ntable } from 'iproute';
+ * import { ntable } from 'iproutejs';
  * ```
  */
 export { ntableModule as ntable };
@@ -372,7 +372,7 @@ export { NtableChangeOptions } from './commands/ntable/change.interfaces';
  *
  * @example
  * ```
- * import { tunnel } from 'iproute';
+ * import { tunnel } from 'iproutejs';
  * ```
  */
 export { tunnelModule as tunnel };
@@ -389,7 +389,7 @@ export { TunnelPrlOptions } from './commands/tunnel/prl.interfaces';
  *
  * @example
  * ```
- * import { tuntap } from 'iproute';
+ * import { tuntap } from 'iproutejs';
  * ```
  */
 export { tuntapModule as tuntap };
@@ -404,7 +404,7 @@ export { TunTapTunnelShowOptions, TunTapTunnelInfo } from './commands/tuntap/sho
  *
  * @example
  * ```
- * import { maddress } from 'iproute';
+ * import { maddress } from 'iproutejs';
  * ```
  */
 export { maddressModule as maddress };
@@ -425,7 +425,7 @@ export { MaddressShowOptions, MaddressInfo } from './commands/maddress/show.inte
  *
  * @example
  * ```
- * import { mroute } from 'iproute';
+ * import { mroute } from 'iproutejs';
  * ```
  */
 export { mrouteModule as mroute };
@@ -437,7 +437,7 @@ export { MrouteInfo, MrouteShowOptions } from './commands/mroute/show.interfaces
  *
  * @example
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  * ```
  */
 export { utilsModule as utils };

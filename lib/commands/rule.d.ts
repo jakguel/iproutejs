@@ -19,7 +19,7 @@ import { RuleInfo, RuleShowOptions } from './rule/show.interfaces';
  *
  * Import module
  * ```
- * import { rule } from 'iproute';
+ * import { rule } from 'iproutejs';
  * ```
  *
  * Unicast type rule (the default if not specified)
@@ -55,7 +55,7 @@ export declare function add(options: RuleAddOptions, globalOptions?: GlobalOptio
  *
  * Import module
  * ```
- * import { rule } from 'iproute';
+ * import { rule } from 'iproutejs';
  * ```
  *
  * Delete the unused default rule
@@ -100,7 +100,7 @@ export declare function restore(globalOptions: GlobalOptionsWithRequiredFilePath
  *
  * Import module
  * ```
- * import { rule } from 'iproute';
+ * import { rule } from 'iproutejs';
  * ```
  *
  * Flush the rules
@@ -122,7 +122,7 @@ export declare function flush(globalOptions?: GlobalOptions): Promise<Command<Em
  *
  * Import module
  * ```
- * import { rule } from 'iproute';
+ * import { rule } from 'iproutejs';
  * ```
  *
  * Show all rules

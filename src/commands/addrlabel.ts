@@ -26,7 +26,7 @@ import { AddrlabelDelSchema } from './addrlabel/del.schema';
  *
  * Import module
  * ```
- * import { addrlabel } from 'iproute';
+ * import { addrlabel } from 'iproutejs';
  * ```
  *
  * Add an address label
@@ -65,7 +65,7 @@ export async function add(options: AddrlabelAddOptions,
  *
  * Import module
  * ```
- * import { addrlabel } from 'iproute';
+ * import { addrlabel } from 'iproutejs';
  * ```
  *
  * Delete an address label
@@ -103,7 +103,7 @@ export async function del(options: AddrlabelDelOptions,
  *
  * Import module
  * ```
- * import { addrlabel } from 'iproute';
+ * import { addrlabel } from 'iproutejs';
  * ```
  *
  * Flush address labels
@@ -136,7 +136,7 @@ export async function flush(globalOptions: GlobalOptions = {}): Promise<Command<
  *
  * Import module
  * ```
- * import { addrlabel } from 'iproute';
+ * import { addrlabel } from 'iproutejs';
  * ```
  *
  * Show all address labels

@@ -5,7 +5,7 @@ import { GlobalOptions } from '../common/interfaces/common';
  * @example
  *
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  *
  * await utils.ipForwarding.v4.enable();
  * await utils.ipForwarding.v4.disable();
@@ -24,7 +24,7 @@ export declare const v4: {
  * @example
  *
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  *
  * await utils.ipForwarding.v6.enable();
  * await utils.ipForwarding.v6.disable();
@@ -45,7 +45,7 @@ export declare const v6: {
  * @example
  *
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  *
  * await utils.ipForwarding.enable();
  * ```
@@ -59,7 +59,7 @@ export declare const enable: (globalOptions?: GlobalOptions) => Promise<void>;
  * @example
  *
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  *
  * await utils.ipForwarding.disable();
  * ```
@@ -73,7 +73,7 @@ export declare const disable: (globalOptions?: GlobalOptions) => Promise<void>;
  * @example
  *
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  *
  * const status = await utils.ipForwarding.status();
  * ```

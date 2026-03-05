@@ -20,7 +20,7 @@ import { MaddressShowSchema } from './maddress/show.schema';
  *
  * Import module
  * ```
- * import { maddress } from 'iproute';
+ * import { maddress } from 'iproutejs';
  * ```
  *
  * Add a multicast address
@@ -59,7 +59,7 @@ export async function add(options: MaddressAddOptions,
  *
  * Import module
  * ```
- * import { maddress } from 'iproute';
+ * import { maddress } from 'iproutejs';
  * ```
  *
  * Delete a tunnel
@@ -98,7 +98,7 @@ export async function del(options: MaddressAddOptions,
  *
  * Import module
  * ```
- * import { maddress } from 'iproute';
+ * import { maddress } from 'iproutejs';
  * ```
  *
  * Show multicast addresses

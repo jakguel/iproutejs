@@ -29,7 +29,7 @@ import { LinkShowSchema } from './link/show.schema';
  *
  * Import module
  * ```
- * import { link } from 'iproute';
+ * import { link } from 'iproutejs';
  * ```
  *
  * Add a link
@@ -71,7 +71,7 @@ export async function add(options: LinkAddOptions,
  *
  * Import module
  * ```
- * import { link } from 'iproute';
+ * import { link } from 'iproutejs';
  * ```
  *
  * Delete a link
@@ -109,7 +109,7 @@ export async function del(options: LinkDeleteOptions,
  *
  * Import module
  * ```
- * import { link } from 'iproute';
+ * import { link } from 'iproutejs';
  * ```
  *
  * Show link information about the `eth0` device

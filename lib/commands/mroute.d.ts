@@ -14,7 +14,7 @@ import { MrouteInfo, MrouteShowOptions } from './mroute/show.interfaces';
  *
  * Import module
  * ```
- * import { mroute } from 'iproute';
+ * import { mroute } from 'iproutejs';
  * ```
  *
  * Show multicast routes

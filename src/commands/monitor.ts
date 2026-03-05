@@ -17,7 +17,7 @@ import { MonitorSchema } from './monitor/monitor.schema';
  *
  * Import module
  * ```
- * import { monitor } from 'iproute';
+ * import { monitor } from 'iproutejs';
  * ```
  *
  * Monitor all objects state changes

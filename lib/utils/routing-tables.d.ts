@@ -10,7 +10,7 @@ import { RoutingTable, RoutingTableOptions } from './routing-tables.interfaces';
  *
  * Import module
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  * ```
  *
  * Show all tables
@@ -43,7 +43,7 @@ export declare function show(options?: RoutingTableOptions, globalOptions?: Glob
  *
  * Import module
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  * ```
  *
  * Add a single table
@@ -76,7 +76,7 @@ export declare function add(options: RoutingTableOptions | RoutingTableOptions[]
  *
  * Import module
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  * ```
  *
  * It will remove the specified table if it exists
@@ -105,7 +105,7 @@ export declare function del(options: RoutingTableOptions | RoutingTableOptions[]
  *
  * Import module
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  * ```
  *
  * Clear all tables
@@ -115,7 +115,7 @@ export declare function del(options: RoutingTableOptions | RoutingTableOptions[]
  *
  * Flush route cache so the changes become active
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  *
  * await utils.routingTables.clear();
  *

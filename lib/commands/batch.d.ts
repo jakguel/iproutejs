@@ -13,7 +13,7 @@ import { Empty, GlobalOptionsWithRequiredFilePath, GlobalOptionsWithRequiredStdi
  *
  * Import module
  * ```
- * import { batch } from 'iproute';
+ * import { batch } from 'iproutejs';
  * ```
  *
  * Executes batch commands from a file
@@ -37,7 +37,7 @@ export declare function fromFile(globalOptions: GlobalOptionsWithRequiredFilePat
  *
  * Import module
  * ```
- * import { batch } from 'iproute';
+ * import { batch } from 'iproutejs';
  * ```
  *
  * Executes batch commands from stdin

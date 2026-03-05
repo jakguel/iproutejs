@@ -17,7 +17,7 @@ import { LinkShowOptions, LinkInfo } from './link/show.interfaces';
  *
  * Import module
  * ```
- * import { link } from 'iproute';
+ * import { link } from 'iproutejs';
  * ```
  *
  * Add a link
@@ -45,7 +45,7 @@ export declare function add(options: LinkAddOptions, globalOptions?: GlobalOptio
  *
  * Import module
  * ```
- * import { link } from 'iproute';
+ * import { link } from 'iproutejs';
  * ```
  *
  * Delete a link
@@ -69,7 +69,7 @@ export declare function del(options: LinkDeleteOptions, globalOptions?: GlobalOp
  *
  * Import module
  * ```
- * import { link } from 'iproute';
+ * import { link } from 'iproutejs';
  * ```
  *
  * Show link information about the `eth0` device

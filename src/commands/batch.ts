@@ -23,7 +23,7 @@ import {
  *
  * Import module
  * ```
- * import { batch } from 'iproute';
+ * import { batch } from 'iproutejs';
  * ```
  *
  * Executes batch commands from a file
@@ -59,7 +59,7 @@ export async function fromFile(globalOptions: GlobalOptionsWithRequiredFilePath)
  *
  * Import module
  * ```
- * import { batch } from 'iproute';
+ * import { batch } from 'iproutejs';
  * ```
  *
  * Executes batch commands from stdin

@@ -44,7 +44,7 @@ function parseTables(rawData: string): RoutingTable[] {
  *
  * Import module
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  * ```
  *
  * Show all tables
@@ -94,7 +94,7 @@ export async function show(options: RoutingTableOptions = {}, globalOptions: Glo
  *
  * Import module
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  * ```
  *
  * Add a single table
@@ -159,7 +159,7 @@ export async function add(options: RoutingTableOptions | RoutingTableOptions[], 
  *
  * Import module
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  * ```
  *
  * It will remove the specified table if it exists
@@ -217,7 +217,7 @@ export async function del(options: RoutingTableOptions | RoutingTableOptions[], 
  *
  * Import module
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  * ```
  *
  * Clear all tables
@@ -227,7 +227,7 @@ export async function del(options: RoutingTableOptions | RoutingTableOptions[], 
  *
  * Flush route cache so the changes become active
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  *
  * await utils.routingTables.clear();
  *

@@ -21,7 +21,7 @@ import { TunTapShowSchema } from './tuntap/show.schema';
  *
  * Import module
  * ```
- * import { tuntap } from 'iproute';
+ * import { tuntap } from 'iproutejs';
  * ```
  *
  * Create a new tuntap device
@@ -59,7 +59,7 @@ export async function add(options: TunTapTunnelAddOptions,
  *
  * Import module
  * ```
- * import { tuntap } from 'iproute';
+ * import { tuntap } from 'iproutejs';
  * ```
  *
  * Delete a tunnel
@@ -97,7 +97,7 @@ export async function del(options: TunTapTunnelAddOptions,
  *
  * Import module
  * ```
- * import { tuntap } from 'iproute';
+ * import { tuntap } from 'iproutejs';
  * ```
  *
  * Show tuntap devices

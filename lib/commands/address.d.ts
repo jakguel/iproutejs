@@ -17,7 +17,7 @@ import { LinkWithAddressInfo, AddressShowOptions, OnlyAddressInfo } from './addr
  *
  * Import module
  * ```
- * import { address } from 'iproute';
+ * import { address } from 'iproutejs';
  * ```
  *
  * Add a new address
@@ -63,7 +63,7 @@ export declare function replace(options: AddressAddOptions, globalOptions?: Glob
  *
  * Import module
  * ```
- * import { address } from 'iproute';
+ * import { address } from 'iproutejs';
  * ```
  *
  * Delete an address
@@ -96,7 +96,7 @@ export declare function del(options: AddressDeleteOptions, globalOptions?: Globa
  *
  * Import module
  * ```
- * import { address } from 'iproute';
+ * import { address } from 'iproutejs';
  * ```
  *
  * Flush `eth0` addresses
@@ -148,7 +148,7 @@ export declare function showdump(globalOptions: GlobalOptionsWithRequiredFilePat
  *
  * Import module
  * ```
- * import { address } from 'iproute';
+ * import { address } from 'iproutejs';
  * ```
  *
  * Show only `eth0` device addresses

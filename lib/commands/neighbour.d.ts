@@ -17,7 +17,7 @@ import { NeighbourGetOptions } from './neighbour/get.interfaces';
  *
  * Import module
  * ```
- * import { neighbour } from 'iproute';
+ * import { neighbour } from 'iproutejs';
  * ```
  *
  * Add a simple ARP entry
@@ -50,7 +50,7 @@ export declare function add(options: NeighbourAddOptions, globalOptions?: Global
  *
  * Import module
  * ```
- * import { neighbour } from 'iproute';
+ * import { neighbour } from 'iproutejs';
  * ```
  *
  * Delete an ARP entry
@@ -99,7 +99,7 @@ export declare function replace(options: NeighbourAddOptions, globalOptions?: Gl
  *
  * Import module
  * ```
- * import { neighbour } from 'iproute';
+ * import { neighbour } from 'iproutejs';
  * ```
  *
  * Flush neighbour entries from dev `eth0`
@@ -123,7 +123,7 @@ export declare function flush(options: NeighbourShowOptions, globalOptions?: Glo
  *
  * Import module
  * ```
- * import { neighbour } from 'iproute';
+ * import { neighbour } from 'iproutejs';
  * ```
  *
  * Show all neighbour entries
@@ -145,7 +145,7 @@ export declare function show(options?: NeighbourShowOptions, globalOptions?: Glo
  *
  * Import module
  * ```
- * import { neighbour } from 'iproute';
+ * import { neighbour } from 'iproutejs';
  * ```
  *
  * Performs a neighbour lookup in the kernel and returns a neighbour entry.

@@ -23,7 +23,7 @@ import { Tunnel6rdSchema } from './tunnel/6rd.schema';
  *
  * Import module
  * ```
- * import { tunnel } from 'iproute';
+ * import { tunnel } from 'iproutejs';
  * ```
  *
  * Create a new tunnel
@@ -65,7 +65,7 @@ export async function add(options: TunnelAddOptions,
  *
  * Import module
  * ```
- * import { tunnel } from 'iproute';
+ * import { tunnel } from 'iproutejs';
  * ```
  *
  * Delete a tunnel
@@ -103,7 +103,7 @@ export async function del(options: TunnelAddOptions,
  *
  * Import module
  * ```
- * import { tunnel } from 'iproute';
+ * import { tunnel } from 'iproutejs';
  * ```
  *
  * Modify an existing tunnel
@@ -144,7 +144,7 @@ export async function change(options: TunnelAddOptions,
  *
  * Import module
  * ```
- * import { tunnel } from 'iproute';
+ * import { tunnel } from 'iproutejs';
  * ```
  *
  * Show tunnels
@@ -209,7 +209,7 @@ export async function prl(options: TunnelPrlOptions,
  *
  * Import module
  * ```
- * import { tunnel } from 'iproute';
+ * import { tunnel } from 'iproutejs';
  * ```
  *
  * Configures 6rd tunneling mechanism.

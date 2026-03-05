@@ -6,7 +6,7 @@ Several usage examples to give you an idea of what you can do with the library.
 
 ### `ip -batch` Batch mode support / [Man Page](https://man7.org/linux/man-pages/man8/ip.8.html)
 
-	import { batch } from 'iproute';
+	import { batch } from 'iproutejs';
 
 #### `batch.fromFile(globalOptions)`
 
@@ -31,7 +31,7 @@ Several usage examples to give you an idea of what you can do with the library.
 
 ### `ip link` Network devices configuration / [Man Page](https://man7.org/linux/man-pages/man8/ip-link.8.html)
 
-	import { link } from 'iproute';
+	import { link } from 'iproutejs';
 
 #### `link.show(options?, globalOptions?)`
 
@@ -46,7 +46,7 @@ Several usage examples to give you an idea of what you can do with the library.
 	const links = await link.show();
 	const links = await link.show({});
 
-The `links` output is an array of links with the matching [LinkInfo[]](https://diosney.github.io/node-iproute/interfaces/LinkInfo.html) interface.
+The `links` output is an array of links with the matching [LinkInfo[]](https://jakguel.github.io/iproutejs/interfaces/LinkInfo.html) interface.
 
 #### `link.del(options, globalOptions?)`
 
@@ -70,7 +70,7 @@ The `links` output is an array of links with the matching [LinkInfo[]](https://d
 
 ### `ip address` Protocol address management / [Man Page](https://man7.org/linux/man-pages/man8/ip-address.8.html)
 
-	import { address } from 'iproute';
+	import { address } from 'iproutejs';
 
 #### `address.show(options?, globalOptions?)`
 
@@ -83,7 +83,7 @@ The `links` output is an array of links with the matching [LinkInfo[]](https://d
     const addresses = await address.show();
     const addresses = await address.show({});
 
-The `addresses` output is an array of links with the matching [LinkWithAddressInfo[]](https://diosney.github.io/node-iproute/interfaces/LinkWithAddressInfo.html) interface.
+The `addresses` output is an array of links with the matching [LinkWithAddressInfo[]](https://jakguel.github.io/iproutejs/interfaces/LinkWithAddressInfo.html) interface.
 
 #### `address.flush(options, globalOptions?)`
 
@@ -108,7 +108,7 @@ The `addresses` output is an array of links with the matching [LinkWithAddressIn
 
 ### `ip route` Routing table management / [Man Page](https://man7.org/linux/man-pages/man8/ip-route.8.html)
 
-	import { route } from 'iproute';
+	import { route } from 'iproutejs';
 
 #### `route.show(options?, globalOptions?)`
 
@@ -118,7 +118,7 @@ The `addresses` output is an array of links with the matching [LinkWithAddressIn
 	  table: RouteRoutingTables.All    // 'all'
 	});
 
-The `routes` output is an array of routes with the matching [RouteInfo[]](https://diosney.github.io/node-iproute/interfaces/RouteInfo.html) interface.
+The `routes` output is an array of routes with the matching [RouteInfo[]](https://jakguel.github.io/iproutejs/interfaces/RouteInfo.html) interface.
 
 #### route.flush(options, globalOptions?)
 
@@ -183,7 +183,7 @@ The `routes` output is an array of routes with the matching [RouteInfo[]](https:
 
 ### `ip rule` Routing policy database (RPDB) management / [Man Page](https://man7.org/linux/man-pages/man8/ip-rule.8.html)
 
-	import { rule } from 'iproute';
+	import { rule } from 'iproutejs';
 
 #### `rule.add(options, globalOptions?)`
 
@@ -224,11 +224,11 @@ The `routes` output is an array of routes with the matching [RouteInfo[]](https:
 
 	const rules = await rule.show();
 
-The `rules` output is an array of routes with the matching [RuleInfo[]](https://diosney.github.io/node-iproute/interfaces/RuleInfo.html) interface.
+The `rules` output is an array of routes with the matching [RuleInfo[]](https://jakguel.github.io/iproutejs/interfaces/RuleInfo.html) interface.
 
 ### `ip monitor` State monitoring / [Man Page](https://man7.org/linux/man-pages/man8/ip-monitor.8.html)
 
-	import { monitor } from 'iproute';
+	import { monitor } from 'iproutejs';
 
 #### `monitor(options, globalOptions?)`
 
@@ -262,11 +262,11 @@ The `rules` output is an array of routes with the matching [RuleInfo[]](https://
     }, 5000);
 
 The `data` object will hold the `iproute` output data, which at this moment doesn't support the `-json` option, so right
-now will conform to the interface [MonitorEmittedData](https://diosney.github.io/node-iproute/interfaces/MonitorEmittedData.html).
+now will conform to the interface [MonitorEmittedData](https://jakguel.github.io/iproutejs/interfaces/MonitorEmittedData.html).
 
 ### `ip addrlabel` Protocol address label management / [Man Page](https://man7.org/linux/man-pages/man8/ip-addrlabel.8.html)
 
-	import { addrlabel } from 'iproute';
+	import { addrlabel } from 'iproutejs';
 
 #### `addrlabel.add(options, globalOptions?)`
 
@@ -297,11 +297,11 @@ now will conform to the interface [MonitorEmittedData](https://diosney.github.io
 
 	const labels = await addrlabel.list();
 
-The `labels` output is an array of address labels with the matching [AddrlabelInfo[]](https://diosney.github.io/node-iproute/interfaces/AddrlabelInfo.html) interface.
+The `labels` output is an array of address labels with the matching [AddrlabelInfo[]](https://jakguel.github.io/iproutejs/interfaces/AddrlabelInfo.html) interface.
 
 ### `ip neighbour` Neighbour/ARP tables management / [Man Page](https://man7.org/linux/man-pages/man8/ip-neighbour.8.html)
 
-	import { neighbour } from 'iproute';
+	import { neighbour } from 'iproutejs';
 
 #### `neighbour.add(options, globalOptions?)`
 
@@ -336,7 +336,7 @@ The `labels` output is an array of address labels with the matching [AddrlabelIn
 
 	const entries = await neighbour.show({});
 
-The `entries` output is an array of ARP entries with the matching [NeighbourInfo[]](https://diosney.github.io/node-iproute/interfaces/NeighbourInfo.html) interface.
+The `entries` output is an array of ARP entries with the matching [NeighbourInfo[]](https://jakguel.github.io/iproutejs/interfaces/NeighbourInfo.html) interface.
 
 #### `neighbour.get(options, globalOptions?)`
 
@@ -347,11 +347,11 @@ The `entries` output is an array of ARP entries with the matching [NeighbourInfo
       dev: 'eth0'
     });
 
-The `entries` output is an array of ARP entries with the matching [NeighbourInfo[]](https://diosney.github.io/node-iproute/interfaces/NeighbourInfo.html) interface.
+The `entries` output is an array of ARP entries with the matching [NeighbourInfo[]](https://jakguel.github.io/iproutejs/interfaces/NeighbourInfo.html) interface.
 
 ### `ip ntable` Neighbour table configuration / [Man Page](https://man7.org/linux/man-pages/man8/ip-ntable.8.html)
 
-	import { ntable } from 'iproute';
+	import { ntable } from 'iproutejs';
 
 #### `ntable.show(options, globalOptions?)`
 
@@ -359,11 +359,11 @@ The `entries` output is an array of ARP entries with the matching [NeighbourInfo
 
 	const entries = await ntable.show({});
 
-The `entries` output is an array of entries with the matching [NtableInfo[]](https://diosney.github.io/node-iproute/interfaces/NtableInfo.html) interface.
+The `entries` output is an array of entries with the matching [NtableInfo[]](https://jakguel.github.io/iproutejs/interfaces/NtableInfo.html) interface.
 
 ### `ip tunnel` Tunnel configuration / [Man Page](https://man7.org/linux/man-pages/man8/ip-tunnel.8.html)
 
-	import { tunnel } from 'iproute';
+	import { tunnel } from 'iproutejs';
 
 #### `tunnel.add(options, globalOptions?)`
 
@@ -403,7 +403,7 @@ The `entries` output is an array of entries with the matching [NtableInfo[]](htt
 
 	const entries = await tunnel.show({});
 
-The `entries` output is an array of tunnel configurations with the matching [TunnelInfo[]](https://diosney.github.io/node-iproute/interfaces/TunnelInfo.html) interface.
+The `entries` output is an array of tunnel configurations with the matching [TunnelInfo[]](https://jakguel.github.io/iproutejs/interfaces/TunnelInfo.html) interface.
 
 #### `tunnel.6rd(options, globalOptions?)`
 
@@ -416,7 +416,7 @@ The `entries` output is an array of tunnel configurations with the matching [Tun
 
 ### `ip tuntap` Tuntap tunnel configuration
 
-	import { tuntap } from 'iproute';
+	import { tuntap } from 'iproutejs';
 
 #### `tuntap.add(options, globalOptions?)`
 
@@ -440,11 +440,11 @@ The `entries` output is an array of tunnel configurations with the matching [Tun
 
 	const entries = await tuntap.show({});
 
-The `entries` output is an array of tunnel configurations with the matching [TunTapTunnelInfo[]](https://diosney.github.io/node-iproute/interfaces/TunTapTunnelInfo.html) interface.
+The `entries` output is an array of tunnel configurations with the matching [TunTapTunnelInfo[]](https://jakguel.github.io/iproutejs/interfaces/TunTapTunnelInfo.html) interface.
 
 ### `ip maddress` Multicast addresses management / [Man Page](https://man7.org/linux/man-pages/man8/ip-maddress.8.html)
 
-	import { maddress } from 'iproute';
+	import { maddress } from 'iproutejs';
 
 #### `maddress.add(options, globalOptions?)`
 
@@ -470,11 +470,11 @@ The `entries` output is an array of tunnel configurations with the matching [Tun
 
 	const entries = await maddress.show({});
 
-The `entries` output is an array of tunnel configurations with the matching [MaddressInfo[]](https://diosney.github.io/node-iproute/interfaces/MaddressInfo.html) interface.
+The `entries` output is an array of tunnel configurations with the matching [MaddressInfo[]](https://jakguel.github.io/iproutejs/interfaces/MaddressInfo.html) interface.
 
 ### `ip mroute` Multicast routing cache management / [Man Page](https://man7.org/linux/man-pages/man8/ip-mroute.8.html)
 
-	import { mroute } from 'iproute';
+	import { mroute } from 'iproutejs';
 
 #### `mroute.show(options, globalOptions?)`
 
@@ -482,16 +482,16 @@ The `entries` output is an array of tunnel configurations with the matching [Mad
 
 	const entries = await mroute.show({});
 
-The `entries` output is an array of multicast routing entries configurations with the matching [MrouteInfo[]](https://diosney.github.io/node-iproute/interfaces/MrouteInfo.html) interface.
+The `entries` output is an array of multicast routing entries configurations with the matching [MrouteInfo[]](https://jakguel.github.io/iproutejs/interfaces/MrouteInfo.html) interface.
 
 ### utils
 
 General helpful utils to provide extra handy functionality not present in `iproute`, like routing table manipulation
 and IP forwarding configuration.
 
-See its complete [API documentation](https://diosney.github.io/node-iproute/modules/utils.html).
+See its complete [API documentation](https://jakguel.github.io/iproutejs/modules/utils.html).
 
-	import { utils } from 'iproute';
+	import { utils } from 'iproutejs';
 
 #### `utils.ipForwarding`
 
@@ -519,7 +519,7 @@ Those are wrapper functions to manage the `/etc/iproute/rt_tables` file.
 
 > **Note:** You have to flush the routing cache after making modifications in the routing tables:
 >
->     import { route } from 'iproute';
+>     import { route } from 'iproutejs';
 >
 >     await route.flush({
 >       table: RouteRoutingTables.Cache   // 'cache'
@@ -552,7 +552,7 @@ Those are wrapper functions to manage the `/etc/iproute/rt_tables` file.
       { id: '255', name: 'local' }
     ]
 
-It adheres to the [RoutingTable](https://diosney.github.io/node-iproute/interfaces/RoutingTable.html) interface.
+It adheres to the [RoutingTable](https://jakguel.github.io/iproutejs/interfaces/RoutingTable.html) interface.
 
 ##### `utils.routingTables.add(options, globalOptions?)`
 
@@ -604,7 +604,7 @@ the modifications take effect and routes with unreferenced tables are discarded.
 
 *Flush route cache so the changes become active*
 
-    import { route } from 'iproute';
+    import { route } from 'iproutejs';
 
 	await utils.routingTables.clear();
 

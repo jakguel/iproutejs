@@ -4,7 +4,7 @@
   ],
   "out": "./docs",
   "entryPointStrategy": "resolve",
-  "name": "node-iproute",
+  "name": "iproutejs",
   "includeVersion": true,
   "theme": "default",
   "cacheBust": true,
@@ -14,15 +14,15 @@
   "excludeInternal": false,
   "treatWarningsAsErrors": false,
   "navigationLinks": {
-    "npm": "https://npmjs.com/iproute",
-    "Github": "https://github.com/diosney/node-iproute",
+    "npm": "https://npmjs.com/iproutejs",
+    "Github": "https://github.com/jakguel/iproutejs",
     "Donate": "https://ko-fi.com/diosney"
   },
   "sidebarLinks": {
-    "Home": "/node-iproute",
-    "Examples": "https://github.com/diosney/node-iproute/blob/master/EXAMPLES.md",
-    "TODO": "https://github.com/diosney/node-iproute/blob/master/TODO.md",
-    "Changelog": "https://github.com/diosney/node-iproute/blob/master/CHANGELOG.md"
+    "Home": "/iproutejs",
+    "Examples": "https://github.com/jakguel/iproutejs/blob/master/EXAMPLES.md",
+    "TODO": "https://github.com/jakguel/iproutejs/blob/master/TODO.md",
+    "Changelog": "https://github.com/jakguel/iproutejs/blob/master/CHANGELOG.md"
   },
   "navigation": {
     "includeCategories": true,

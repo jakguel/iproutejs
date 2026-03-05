@@ -15,7 +15,7 @@ import { MaddressInfo, MaddressShowOptions } from './maddress/show.interfaces';
  *
  * Import module
  * ```
- * import { maddress } from 'iproute';
+ * import { maddress } from 'iproutejs';
  * ```
  *
  * Add a multicast address
@@ -40,7 +40,7 @@ export declare function add(options: MaddressAddOptions, globalOptions?: GlobalO
  *
  * Import module
  * ```
- * import { maddress } from 'iproute';
+ * import { maddress } from 'iproutejs';
  * ```
  *
  * Delete a tunnel
@@ -65,7 +65,7 @@ export declare function del(options: MaddressAddOptions, globalOptions?: GlobalO
  *
  * Import module
  * ```
- * import { maddress } from 'iproute';
+ * import { maddress } from 'iproutejs';
  * ```
  *
  * Show multicast addresses

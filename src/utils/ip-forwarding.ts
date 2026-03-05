@@ -53,7 +53,7 @@ async function sysctl(path: string,
  * @example
  *
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  *
  * await utils.ipForwarding.v4.enable();
  * await utils.ipForwarding.v4.disable();
@@ -73,7 +73,7 @@ export const v4 = {
  * @example
  *
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  *
  * await utils.ipForwarding.v6.enable();
  * await utils.ipForwarding.v6.disable();
@@ -95,7 +95,7 @@ export const v6 = {
  * @example
  *
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  *
  * await utils.ipForwarding.enable();
  * ```
@@ -112,7 +112,7 @@ export const enable = async (globalOptions: GlobalOptions = {}) => {
  * @example
  *
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  *
  * await utils.ipForwarding.disable();
  * ```
@@ -129,7 +129,7 @@ export const disable = async (globalOptions: GlobalOptions = {}) => {
  * @example
  *
  * ```
- * import { utils } from 'iproute';
+ * import { utils } from 'iproutejs';
  *
  * const status = await utils.ipForwarding.status();
  * ```

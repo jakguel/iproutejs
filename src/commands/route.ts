@@ -35,7 +35,7 @@ import { RouteAddSchema }              from './route/add.schema';
  *
  * Import module
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  * ```
  *
  * Show routes from all tables
@@ -82,7 +82,7 @@ export async function show(options: RouteShowOptions    = {},
  *
  * Import module
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  * ```
  *
  * Flush the table cache
@@ -204,7 +204,7 @@ export async function get(options: RouteGetOptions,
  *
  * Import module
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  * ```
  *
  * Unicast type route (the default if not specified)
@@ -273,7 +273,7 @@ export async function add(options: RouteAddOptions,
  *
  * Import module
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  * ```
  *
  * Delete multipath route with load balance between devices
@@ -368,7 +368,7 @@ export async function append(options: RouteAddOptions,
  *
  * Import module
  * ```
- * import { route } from 'iproute';
+ * import { route } from 'iproutejs';
  * ```
  *
  * Unicast type route (the default if not specified)

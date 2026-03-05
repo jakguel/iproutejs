@@ -32,7 +32,7 @@ import { RuleShowSchema }            from './rule/show.schema';
  *
  * Import module
  * ```
- * import { rule } from 'iproute';
+ * import { rule } from 'iproutejs';
  * ```
  *
  * Unicast type rule (the default if not specified)
@@ -82,7 +82,7 @@ export async function add(options: RuleAddOptions,
  *
  * Import module
  * ```
- * import { rule } from 'iproute';
+ * import { rule } from 'iproutejs';
  * ```
  *
  * Delete the unused default rule
@@ -167,7 +167,7 @@ export async function restore(globalOptions: GlobalOptionsWithRequiredFilePath):
  *
  * Import module
  * ```
- * import { rule } from 'iproute';
+ * import { rule } from 'iproutejs';
  * ```
  *
  * Flush the rules
@@ -201,7 +201,7 @@ export async function flush(globalOptions: GlobalOptions = {}): Promise<Command<
  *
  * Import module
  * ```
- * import { rule } from 'iproute';
+ * import { rule } from 'iproutejs';
  * ```
  *
  * Show all rules

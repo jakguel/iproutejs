@@ -14,7 +14,7 @@ import { MonitorOptions } from './monitor/monitor.interfaces';
  *
  * Import module
  * ```
- * import { monitor } from 'iproute';
+ * import { monitor } from 'iproutejs';
  * ```
  *
  * Monitor all objects state changes

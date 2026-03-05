@@ -38,7 +38,7 @@ import CommandWithRedirectFromFilepathAndReturnedData from '../common/classes/co
  *
  * Import module
  * ```
- * import { address } from 'iproute';
+ * import { address } from 'iproutejs';
  * ```
  *
  * Add a new address
@@ -126,7 +126,7 @@ export async function replace(options: AddressAddOptions,
  *
  * Import module
  * ```
- * import { address } from 'iproute';
+ * import { address } from 'iproutejs';
  * ```
  *
  * Delete an address
@@ -173,7 +173,7 @@ export async function del(options: AddressDeleteOptions,
  *
  * Import module
  * ```
- * import { address } from 'iproute';
+ * import { address } from 'iproutejs';
  * ```
  *
  * Flush `eth0` addresses
@@ -283,7 +283,7 @@ export async function showdump(globalOptions: GlobalOptionsWithRequiredFilePath)
  *
  * Import module
  * ```
- * import { address } from 'iproute';
+ * import { address } from 'iproutejs';
  * ```
  *
  * Show only `eth0` device addresses

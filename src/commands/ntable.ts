@@ -46,7 +46,7 @@ export async function change(options: NtableChangeOptions,
  *
  * Import module
  * ```
- * import { ntable } from 'iproute';
+ * import { ntable } from 'iproutejs';
  * ```
  *
  * Show all neighbour tables

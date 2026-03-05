@@ -1,5 +1,5 @@
 {
-	"name": "iproute",
+	"name": "iproutejs",
 	"version": "2.3.0",
 	"description": "Show and manipulate network devices, addresses, routing, policy routing, tunnels, IP forwarding, address labels and other `iproute` objects.",
 	"main": "./lib/index.js",
@@ -55,9 +55,9 @@
 	"engines": {
 		"node": ">=14.0.0"
 	},
-	"homepage": "https://diosney.github.io/node-iproute",
+	"homepage": "https://github.com/jakguel/iproutejs",
 	"bugs": {
-		"url": "https://github.com/diosney/node-iproute/issues"
+		"url": "https://github.com/jakguel/iproutejs/issues"
 	},
 	"author": {
 		"name": "Diosney Sarmiento",
@@ -66,7 +66,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/diosney/node-iproute.git"
+		"url": "https://github.com/jakguel/iproutejs.git"
 	},
 	"funding": {
 		"type": "ko-fi",

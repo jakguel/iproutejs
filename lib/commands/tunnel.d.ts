@@ -17,7 +17,7 @@ import { Tunnel6rdOptions } from './tunnel/6rd.interfaces';
  *
  * Import module
  * ```
- * import { tunnel } from 'iproute';
+ * import { tunnel } from 'iproutejs';
  * ```
  *
  * Create a new tunnel
@@ -45,7 +45,7 @@ export declare function add(options: TunnelAddOptions, globalOptions?: GlobalOpt
  *
  * Import module
  * ```
- * import { tunnel } from 'iproute';
+ * import { tunnel } from 'iproutejs';
  * ```
  *
  * Delete a tunnel
@@ -69,7 +69,7 @@ export declare function del(options: TunnelAddOptions, globalOptions?: GlobalOpt
  *
  * Import module
  * ```
- * import { tunnel } from 'iproute';
+ * import { tunnel } from 'iproutejs';
  * ```
  *
  * Modify an existing tunnel
@@ -96,7 +96,7 @@ export declare function change(options: TunnelAddOptions, globalOptions?: Global
  *
  * Import module
  * ```
- * import { tunnel } from 'iproute';
+ * import { tunnel } from 'iproutejs';
  * ```
  *
  * Show tunnels
@@ -128,7 +128,7 @@ export declare function prl(options: TunnelPrlOptions, globalOptions?: GlobalOpt
  *
  * Import module
  * ```
- * import { tunnel } from 'iproute';
+ * import { tunnel } from 'iproutejs';
  * ```
  *
  * Configures 6rd tunneling mechanism.
