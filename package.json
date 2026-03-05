@@ -1,6 +1,6 @@
 {
 	"name": "iproutejs",
-	"version": "2.3.1",
+	"version": "2.3.2",
 	"description": "Show and manipulate network devices, addresses, routing, policy routing, tunnels, IP forwarding, address labels and other `iproute` objects.",
 	"main": "./lib/index.js",
 	"types": "./lib/index.d.ts",
@@ -45,7 +45,7 @@
 		"tuntap",
 		"maddress",
 		"mroute",
-    "batch"
+		"batch"
 	],
 	"dependencies": {
 		"ajv": "^8.12.0",
