@@ -5,7 +5,7 @@
 	"main": "./lib/index.js",
 	"types": "./lib/index.d.ts",
 	"scripts": {
-		
+		"build": "npm run build:ts",
 		"build:ts": "npm run clean && npx tsc --project tsconfig.json",
 		"clean": "npx rimraf ./lib",
 		"test": "npm run test:safe",
@@ -53,7 +53,7 @@
 		"lodash.isplainobject": "^4.0.6"
 	},
 	"engines": {
-		"node": ">=14.0.0"
+		"node": ">=18.0.0"
 	},
 	"homepage": "https://github.com/jakguel/iproutejs",
 	"bugs": {
