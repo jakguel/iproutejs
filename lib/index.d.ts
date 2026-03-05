@@ -19,7 +19,7 @@ export { SchemaIds } from './common/constants/schemas';
 export { mac, hex4Digits, ipv4, ipv6, ip, ipWithOptionalMask, ipWithRequiredMask, ipOrAny, ipWithOptionalMaskAndAllAndDefaultValues, ipWithRequiredMaskAndAllAndDefaultValues, ipWithOptionalFamilyPrefix, slashSeparatedStrings, slashSeparatedNumbers, commaSeparatedIpv6Addresses, timeWithUnit, colonSeparatedNumbers } from './common/constants/regexes';
 export { GlobalOptions, Empty, FilePathRequiredGlobalOption, StdinRequiredGlobalOption, GlobalOptionsWithRequiredFilePath, GlobalOptionsWithRequiredStdin } from './common/interfaces/common';
 export { MonitorEmittedData } from './common/interfaces/monitor';
-export { CommandError } from './common/errors/command';
+export { CommandError, CommandErrorCodes } from './common/errors/command';
 export { ParametersError } from './common/errors/parameters';
 /**
  * Read commands from provided file or standard input and invoke them.

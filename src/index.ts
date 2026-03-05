@@ -106,7 +106,7 @@ export { MonitorEmittedData } from './common/interfaces/monitor';
 //
 // Common/Errors.
 //
-export { CommandError } from './common/errors/command';
+export { CommandError, CommandErrorCodes } from './common/errors/command';
 export { ParametersError } from './common/errors/parameters';
 
 /**
