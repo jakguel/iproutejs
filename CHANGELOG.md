@@ -1,9 +1,24 @@
 ### Release Notes
 
-### 2.3.0
+### 2.3.3
 
+- `CommandError` now carries a typed `code` property derived from stderr text.
+  Use `err.code` (or the exported `CommandErrorCodes` constants) in `catch` blocks instead of matching `err.message`.
+  Known codes: `ERR_ALREADY_EXISTS`, `ERR_NO_DEVICE`, `ERR_NOT_FOUND`, `ERR_COMMAND_ERRORED` (fallback).
+
+### 2.3.2
+
+- Fixed parsing of `ip -statistics` plain-text RX/TX stats interleaved in JSON output.
+
+### 2.3.1
+
+- Added missing `build` script; updated CI to Node 18/20/22 and actions v4.
+
+### 2.3.0 (iproutejs fork origin)
+
+- Renamed package from `iproute` to `iproutejs`; updated all internal references.
+- Fixed NDJSON and missing-comma output from `ip -json` commands.
 - Added support for `ip neighbour get`.
-- Updated badges in README.
 
 ### 2.2.2
 

@@ -4,6 +4,36 @@ Several usage examples to give you an idea of what you can do with the library.
 
 > These examples are gathered as a whole here for quick find, but they are also in each of the module methods.
 
+### Error Handling with `CommandError`
+
+All write operations throw a `CommandError` when the `ip` command fails.
+Use the exported `CommandErrorCodes` constants to distinguish error reasons without fragile string matching:
+
+	import { route, CommandError, CommandErrorCodes } from 'iproutejs';
+
+	// Idempotent route addition — ignore "already exists", re-throw everything else.
+	try {
+	  await route.add({ to: '10.0.0.0/24', dev: 'eth0', sudo: true });
+	} catch (err) {
+	  if (err instanceof CommandError && err.code === CommandErrorCodes.ALREADY_EXISTS) {
+	    // Route already present — that's fine.
+	  } else {
+	    throw err;
+	  }
+	}
+
+	// Idempotent deletion — ignore "not found", re-throw everything else.
+	try {
+	  await route.del({ to: '10.0.0.0/24', sudo: true });
+	} catch (err) {
+	  if (err instanceof CommandError && err.code === CommandErrorCodes.NOT_FOUND) {
+	    // Route did not exist — nothing to do.
+	  } else {
+	    throw err;
+	  }
+	}
+
+
 ### `ip -batch` Batch mode support / [Man Page](https://man7.org/linux/man-pages/man8/ip.8.html)
 
 	import { batch } from 'iproutejs';

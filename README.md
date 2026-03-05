@@ -181,6 +181,57 @@ Both of these calls are valid:
  
 A **PR** is more than welcome.
 
+## Error Handling
+
+All write operations (`add`, `del`, `set`, …) throw a `CommandError` when the underlying `ip` command writes to stderr.
+The error has two useful properties:
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `message` | `string` | Raw stderr text from the `ip` command |
+| `code` | `string` | Typed reason code — see `CommandErrorCodes` |
+| `cmd` | `string` | Full command line that was executed |
+
+Import the constants to avoid magic strings in your catch blocks:
+
+```typescript
+import { address, CommandError, CommandErrorCodes } from 'iproutejs';
+
+try {
+  await address.add({ local: '192.168.1.1/24', dev: 'eth0', sudo: true });
+} catch (err) {
+  if (err instanceof CommandError) {
+    switch (err.code) {
+      case CommandErrorCodes.ALREADY_EXISTS:
+        // iproute2: "RTNETLINK answers: File exists"
+        // or newer:  "Error: ipv4: Address already assigned."
+        console.log('Address already configured — skipping');
+        break;
+      case CommandErrorCodes.NO_DEVICE:
+        // iproute2: "Cannot find device\"eth0\""
+        throw new Error(`Network device not found: ${err.message}`);
+      case CommandErrorCodes.NOT_FOUND:
+        // iproute2: "RTNETLINK answers: No such process"
+        console.log('Object does not exist — nothing to remove');
+        break;
+      default:
+        throw err;  // ERR_COMMAND_ERRORED — unexpected error
+    }
+  } else {
+    throw err;
+  }
+}
+```
+
+### Available `CommandErrorCodes`
+
+| Code | Triggers on |
+|------|-------------|
+| `ERR_ALREADY_EXISTS` | `File exists` \| `Address already assigned` |
+| `ERR_NO_DEVICE` | `No such device` \| `Cannot find device` |
+| `ERR_NOT_FOUND` | `No such process` |
+| `ERR_COMMAND_ERRORED` | any other stderr output (fallback) |
+
 ## Issues
 
 The source code can be accessed on [GitHub](https://github.com/jakguel/iproutejs).
