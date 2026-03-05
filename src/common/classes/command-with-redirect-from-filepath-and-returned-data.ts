@@ -6,6 +6,7 @@ import { SchemaIds }                         from '../constants/schemas';
 import { CommandError }                      from '../errors/command';
 import { GlobalOptionsWithRequiredFilePath } from '../interfaces/common';
 import CommandWithRedirectFromFilepath       from './command-with-redirect-from-filepath';
+import { parseCommandOutput }                from '../parse-output';
 
 const promisifiedExec = promisify(exec);
 
@@ -37,7 +38,7 @@ export default class CommandWithRedirectFromFilepathAndReturnedData<T_CommandOpt
           } = await promisifiedExec(this._cmdToExec);
 
     if (!stderr) {
-      return JSON.parse(stdout);
+      return parseCommandOutput<T_ReturnData>(stdout);
     }
 
     const message = stderr.replace(/\n/g, '');

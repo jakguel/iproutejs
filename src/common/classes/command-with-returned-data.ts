@@ -6,6 +6,7 @@ import { SchemaIds }     from '../constants/schemas';
 import { CommandError }  from '../errors/command';
 import { GlobalOptions } from '../interfaces/common';
 import Command           from './command';
+import { parseCommandOutput } from '../parse-output';
 
 const promisifiedExec = promisify(exec);
 
@@ -34,7 +35,7 @@ export default class CommandWithReturnedData<T_CommandOptions extends { [index: 
           } = await promisifiedExec(this._cmdToExec);
 
     if (!stderr) {
-      return JSON.parse(stdout);
+      return parseCommandOutput<T_ReturnData>(stdout);
     }
 
     const message = stderr.replace(/\n/g, '');
