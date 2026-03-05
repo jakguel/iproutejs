@@ -1,0 +1,1 @@
+{"version":3,"file":"off.schema.js","sourceRoot":"","sources":["../../../../src/commands/link/xdp-options/off.schema.ts"],"names":[],"mappings":";;;AAIa,QAAA,0BAA0B,GAAyC;IAC9E,IAAI,EAAQ,QAAQ;IACpB,QAAQ,EAAI,CAAC,OAAO,CAAC;IACrB,UAAU,EAAE;QACV,KAAK,EAAE;YACL,IAAI,EAAK,SAAS;YAClB,IAAI,EAAK,CAAC,IAAI,CAAC;YACf,OAAO,EAAE,IAAI;SACd;KACF;CACF,CAAC"}

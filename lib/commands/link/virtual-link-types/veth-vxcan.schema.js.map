@@ -1,0 +1,1 @@
+{"version":3,"file":"veth-vxcan.schema.js","sourceRoot":"","sources":["../../../../src/commands/link/virtual-link-types/veth-vxcan.schema.ts"],"names":[],"mappings":";;;AAIa,QAAA,0BAA0B,GAA6C;IAClF,IAAI,EAAkB,QAAQ;IAC9B,QAAQ,EAAc,EAAE;IACxB,oBAAoB,EAAE,KAAK;IAC3B,UAAU,EAAY;QACpB,WAAW,EAAE;YACX,IAAI,EAAO,QAAQ;YACnB,SAAS,EAAE,CAAC;YACZ,QAAQ,EAAG,IAAI;SAChB;KACF;CACF,CAAC"}

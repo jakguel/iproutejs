@@ -1,0 +1,1 @@
+{"version":3,"file":"rmnet.schema.js","sourceRoot":"","sources":["../../../../src/commands/link/virtual-link-types/rmnet.schema.ts"],"names":[],"mappings":";;;AAIa,QAAA,sBAAsB,GAAyC;IAC1E,IAAI,EAAkB,QAAQ;IAC9B,QAAQ,EAAc,CAAC,QAAQ,CAAC;IAChC,oBAAoB,EAAE,KAAK;IAC3B,UAAU,EAAY;QACpB,MAAM,EAAE;YACN,IAAI,EAAK,SAAS;YAClB,OAAO,EAAE,CAAC;YACV,OAAO,EAAE,GAAG;SACb;KACF;CACF,CAAC"}

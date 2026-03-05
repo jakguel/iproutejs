@@ -1,0 +1,1 @@
+{"version":3,"file":"vrf.schema.js","sourceRoot":"","sources":["../../../../src/commands/link/virtual-link-types/vrf.schema.ts"],"names":[],"mappings":";;;AAIa,QAAA,oBAAoB,GAAuC;IACtE,IAAI,EAAkB,QAAQ;IAC9B,QAAQ,EAAc,CAAC,OAAO,CAAC;IAC/B,oBAAoB,EAAE,KAAK;IAC3B,UAAU,EAAY;QACpB,KAAK,EAAE;YACL,IAAI,EAAK,SAAS;YAClB,OAAO,EAAE,CAAC;YACV,OAAO,EAAE,UAAU;SACpB;KACF;CACF,CAAC"}
