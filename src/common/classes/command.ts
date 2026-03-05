@@ -1,14 +1,12 @@
+import { execCommand } from '../exec-command';
 import { JSONSchemaType } from 'ajv';
 import isPlainObject from 'lodash.isplainobject';
-import { promisify } from 'util';
-import { exec } from 'child_process';
 
 import { GlobalOptionsSchema, SchemaIds } from '../constants/schemas';
 import { CommandError } from '../errors/command';
 import { GlobalOptions } from '../interfaces/common';
 import { validate } from '../misc';
 
-const promisifiedExec = promisify(exec);
 
 /**
  * Class to group common behavior among commands.
@@ -144,7 +142,7 @@ export default class Command<T_CommandOptions extends { [index: string]: any; }>
       return this;
     }
 
-    const { stderr } = await promisifiedExec(this._cmdToExec);
+    const { stderr } = await execCommand(this._cmdToExec);
 
     if (!stderr) {
       return this;

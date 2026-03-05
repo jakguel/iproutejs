@@ -1,6 +1,5 @@
+import { execCommand } from '../exec-command';
 import { JSONSchemaType } from 'ajv';
-import { promisify } from 'util';
-import { exec } from 'child_process';
 
 import { FilePathGlobalOptionSchema, SchemaIds } from '../constants/schemas';
 import { CommandError } from '../errors/command';
@@ -8,7 +7,6 @@ import { GlobalOptionsWithRequiredFilePath } from '../interfaces/common';
 import Command from './command';
 import { validate } from '../misc';
 
-const promisifiedExec = promisify(exec);
 
 export default class CommandWithFilepath<T_CommandOptions extends {
   [index: string]: any;
@@ -42,7 +40,7 @@ export default class CommandWithFilepath<T_CommandOptions extends {
       return this;
     }
 
-    const { stderr } = await promisifiedExec(this._cmdToExec);
+    const { stderr } = await execCommand(this._cmdToExec);
 
     if (!stderr) {
       return this;

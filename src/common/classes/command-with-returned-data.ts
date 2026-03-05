@@ -1,14 +1,11 @@
 import { JSONSchemaType } from 'ajv';
-import { promisify }      from 'util';
-import { exec }           from 'child_process';
+import { execCommand } from '../exec-command';
 
 import { SchemaIds }     from '../constants/schemas';
 import { CommandError }  from '../errors/command';
 import { GlobalOptions } from '../interfaces/common';
 import Command           from './command';
 import { parseCommandOutput } from '../parse-output';
-
-const promisifiedExec = promisify(exec);
 
 export default class CommandWithReturnedData<T_CommandOptions extends { [index: string]: any; }> extends Command<T_CommandOptions> {
   constructor(protected schemaId: SchemaIds,
@@ -29,10 +26,7 @@ export default class CommandWithReturnedData<T_CommandOptions extends { [index: 
       return this;
     }
 
-    const {
-            stderr,
-            stdout
-          } = await promisifiedExec(this._cmdToExec);
+    const { stderr, stdout } = await execCommand(this._cmdToExec);
 
     if (!stderr) {
       return parseCommandOutput<T_ReturnData>(stdout);

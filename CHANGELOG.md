@@ -1,5 +1,14 @@
 ### Release Notes
 
+### 2.3.4
+
+- Fixed critical bug: `CommandError` was never actually thrown in practice. `promisify(exec)` throws a
+  raw Node `Error` on non-zero exit codes — the `CommandError` conversion code was never reached.
+  Introduced `execCommand()` helper that wraps `promisify(exec)` and always converts failures to
+  `CommandError` (with typed `code`). All 6 base command classes updated.
+- Exported `CommandErrorCodes` constants from the package index.
+
+
 ### 2.3.3
 
 - `CommandError` now carries a typed `code` property derived from stderr text.

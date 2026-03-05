@@ -1,6 +1,5 @@
+import { execCommand } from '../exec-command';
 import { JSONSchemaType } from 'ajv';
-import { promisify }      from 'util';
-import { exec }           from 'child_process';
 
 import { SchemaIds }                         from '../constants/schemas';
 import { CommandError }                      from '../errors/command';
@@ -8,7 +7,6 @@ import { GlobalOptionsWithRequiredFilePath } from '../interfaces/common';
 import CommandWithRedirectFromFilepath       from './command-with-redirect-from-filepath';
 import { parseCommandOutput }                from '../parse-output';
 
-const promisifiedExec = promisify(exec);
 
 export default class CommandWithRedirectFromFilepathAndReturnedData<T_CommandOptions extends {
   [index: string]: any;
@@ -35,7 +33,7 @@ export default class CommandWithRedirectFromFilepathAndReturnedData<T_CommandOpt
     const {
             stderr,
             stdout
-          } = await promisifiedExec(this._cmdToExec);
+          } = await execCommand(this._cmdToExec);
 
     if (!stderr) {
       return parseCommandOutput<T_ReturnData>(stdout);
